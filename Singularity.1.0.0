@@ -61,7 +61,7 @@ From: pndni/centos7-base:1.1.1
 
 %labels
     Maintainer Steven Tilley
-    Version dev
+    Version 1.0.0
 
 %applabels minc
     URL https://www.mcgill.ca/bic/software/minc
