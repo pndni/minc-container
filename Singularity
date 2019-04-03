@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: pndni/centos7-base:1.1.0
+From: pndni/centos7-base:1.1.1
 # OSVersion: 7
 # MirrorURL: http://mirror.centos.org/centos-%{OSVERSION}/%{OSVERSION}/os/x86_64/
 # Include: yum
