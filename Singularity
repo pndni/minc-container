@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: pndni/centos7-base:1.1.1
+From: pndni/centos7-base:1.2.0
 # OSVersion: 7
 # MirrorURL: http://mirror.centos.org/centos-%{OSVERSION}/%{OSVERSION}/os/x86_64/
 # Include: yum
@@ -47,8 +47,9 @@ From: pndni/centos7-base:1.1.1
 %appenv minc
     # from minc-toolkit-config.sh
     # dropped LD_LIBRARY_PATH because everything should be
-    # statically linked (running "for i in `ls`; do ldd $i | grep -i minc; done" in bin
-    # yielded no results, confirming this)
+    # statically linked
+    # to confirm, set LD_LIBRARY_PATH as below and run "for i in `ls`; do ldd $i | grep -i minc; done" in bin
+    # it should yield no results
     export MINC_TOOLKIT=/opt/minc
     export MINC_TOOLKIT_VERSION="1.9.17-20190313"
     export PATH=${MINC_TOOLKIT}/bin:${MINC_TOOLKIT}/pipeline:${PATH}
